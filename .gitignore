@@ -1,0 +1,12 @@
+# OS & Environment
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary Browser Profiles & Logs
+*.log
+temp_profile/
+temp_chrome/
+assets/temp_profile/
+assets/temp_chrome/

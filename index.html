@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WattWise — Campus Energy Intelligence Platform | Smarter Energy. Less Waste.</title>
+  <meta name="description" content="WattWise helps universities and colleges identify electricity waste in classrooms, monitor real-time occupancy and device status, estimate utility costs, and drive sustainable energy reduction.">
+  <meta name="keywords" content="campus energy intelligence, classroom energy monitoring, electricity waste detection, university energy efficiency, smart campus IoT">
+  <meta name="theme-color" content="#173F35">
+
+  <!-- Favicon with Angular W Geometric Vector Lettermark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 40'%3E%3Cpolygon points='4,8 10.5,8 16.5,31 11,31' fill='%23173F35'/%3E%3Cpolygon points='14,31 21.5,8 26.5,8 18.5,31' fill='%23A7B9A0'/%3E%3Cpolygon points='24,8 29,8 34,23 37.5,8 43,8 37,31 31.5,31 27.5,18 24.5,31 20.5,31' fill='%23173F35'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Inter & Manrope for Refined Swiss-Modernist Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/screens.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Sticky Simulation Mode Notice -->
+    <div id="sim-alert-banner" class="sim-alert-banner"></div>
+
+    <!-- App Navigation Header with Angular W Logo -->
+    <header id="app-header" class="app-header"></header>
+
+    <!-- Main Content Area with Screen Views -->
+    <main class="main-content" id="main-content-root">
+      <!-- SCREEN A: LANDING PAGE -->
+      <section id="landing-screen" class="screen-view active" aria-label="WattWise Landing Overview"></section>
+
+      <!-- SCREEN B: MAIN DASHBOARD -->
+      <section id="dashboard-screen" class="screen-view" aria-label="Campus Overview Dashboard"></section>
+
+      <!-- SCREEN C: CLASSROOM MONITORING -->
+      <section id="monitoring-screen" class="screen-view" aria-label="Classroom Monitoring Directory"></section>
+
+      <!-- SCREEN D: ENERGY ANALYTICS & SIMULATOR -->
+      <section id="analytics-screen" class="screen-view" aria-label="Energy Analytics and What-If Simulator"></section>
+
+      <!-- SCREEN E: WASTE ALERTS -->
+      <section id="alerts-screen" class="screen-view" aria-label="Waste Alert Management"></section>
+
+      <!-- SCREEN F: REPORTS -->
+      <section id="reports-screen" class="screen-view" aria-label="Campus Energy Audit Reports"></section>
+    </main>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+  </div>
+
+  <!-- Firebase Cloud Backend SDK (Project: wattwise-3b7f7) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+  <script src="js/firebase.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
